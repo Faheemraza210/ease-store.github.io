@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <title>Galaxy store</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <style type="text/css">
+    body{
+      background-color: lightgrey;
+    }
+  </style>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">ease-store</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="store.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Manage Accounts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ginlo.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="search.html">Admin login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Need help</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="electronics.html">Electronics</a>
+          <a class="dropdown-item" href="#">Clothes<a href="clothsmens.html">Mens<a href="#">Womens<a href="#">Childrens</a></a></a></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Devices</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#"><img src="green.jpg" class="d-block w-100" alt="green"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="slide.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="GAP.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+      box-shadow:  0px 0px 10px rgba(0,0,0,0.1);
+     border-radius: 2px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+ .card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card {
+
+...
+  transition: 1.0s;
+  cursor: pointer;
+  margin:30px;
+}
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1.4px solid black;
+  border-radius: 3px;
+  padding:10px;
+  height: 40px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+<body>
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="Heplot.png" style="height: 219px; width: 270px;">
+</div>
+<div class="title">
+ <h1>Microsoft Laptop</h1>
+</div>
+<div class="des">
+ <p>Microsoft famous laptop with very<br>high quality devices</p>
+ <p>Rs 80,000</p>
+<a href="Microsoftlap.html"><button>Buy</button></a>
+<button>Add to cart</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card" style="height: 490px; width: 270px;">
+
+<div class="image">
+   <img src="vivabook.png">
+</div>
+<div class="title">
+ <h1>Asus black vivabook</h1>
+</div>
+<div class="des">
+ <p>Asus black vivabook laptop with very<br>high quality devices</p>
+ <p>Rs 50,000</p>
+<a href="asblack.html"><button>Buy</button></a>
+<button>Add to cart</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="title">
+  <div class="image">
+    <img src="Asus.jpg">
+  </div>
+ <h1>Tohshiba laptop</div>
+<div class="des">
+ <p>Tohshiba Z-series wiith very hight quality devices</p>
+ <p>Rs 82,600</p>
+<a href="buy.html"><button>Buy</button></a>
+<button>Add to cart</button>
+</div>
+</div>
+</div>
+
+<div class="card" style="height: 500px; width: 400px;">
+  <div class="image">
+    <img src="anti.jpg">
+  </div>
+
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="title">
+  <div class="image">
+    <img src="amazon.jpg">
+  </div>
+ <h1>Asus white vivabook </div>
+<div class="des">
+ <p>Asus white vivabook laptop with very<br>high quality devices</p>
+ <p>Rs 82,600</p>
+<a href="vivabook.html"><button>Buy</button></a>
+<button>Add to cart</button>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="title">
+  <div class="image">
+    <img src="base2.png">
+  </div>
+ <h1>White shirt</h1>
+</div>
+<div class="des">
+ <p>White shirt for boys</p>
+ <p>Rs 150</p>
+<button>Buy</button>
+<button>Add to cart</button>
+</div>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="green2.jpg">
+</div>
+<div class="title">
+ <h1>Gaming laptop</h1>
+</div>
+<div class="des">
+ <p>Best gaming laptop in the world</p>
+ <p>Rs 150,900</p>
+<button>Buy</button>
+<button>Add to cart</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="nike2.jfif">
+</div>
+<div class="title">
+ <h1>Nike shoes</h1>
+</div>
+<div class="des">
+ <p>Red nike shoes for mens</p>
+ <p>Rs 350</p>
+<button>Buy</button>
+<button>Add to cart</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="market.png">
+</div>
+<div class="title">
+ <h1>HP pavilion</h1>
+</div>
+<div class="des">
+ <p>HP pavilion with core i5 processor and very good<br>Quality devices</p>
+ <p>Rs 30,000</p>
+<button>Buy</button>
+<button>Add to cart</button>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="CAT.jpg">
+</div>
+<div class="title">
+ <h1>CAT shoes </h1>
+</div>
+<div class="des">
+ <p>CAT shoes with very good quality leather</p>
+ <p>Rs 600</p>
+<button>Buy</button>
+<button>Add to cart</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="transparent.png">
+</div>
+<div class="title">
+ <h1>HP pavilion 2 second edition</h1>
+</div>
+<div class="des">
+ <p>HP pavilion 2nd edition with very high quality devices</p>
+ <p>Rs 70,000</p>
+<button>Buy</button>
+<button>Add to cart</button>
+</div>
+</div>
+</div>
+
+<body>
+</html>
